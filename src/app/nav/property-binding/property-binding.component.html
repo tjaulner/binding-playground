@@ -1,0 +1,15 @@
+<h5>Basic Property Binding 1</h5>
+<p>Form Box is Disabled, Can Enable by clicking button</p>
+<p>Includes ternary operator to change text in button</p>
+
+<input
+  type="text"
+  [disabled]="isDisabled"
+  >
+<button
+  class="btn-danger"
+  (click)="isDisabled = !isDisabled">
+  {{ isDisabled ? "Disabled, Click Me" : "Form Is Ready to Change" }}
+</button>
+
+<p>Need to create another example</p>

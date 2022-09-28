@@ -1,0 +1,16 @@
+<h5>Basic Event Binding 1</h5>
+<button
+  class="btn btn-primary"
+  (click)="onClick()"
+  >Click This
+  </button>
+<label>{{ message }}</label>
+<hr>
+
+<h5>Basic Event Binding 2</h5>
+<p>Type in the Box, Then Hit Enter</p>
+<input
+  type="text"
+  (keydown.enter)="onKey()"
+  >
+<label>{{ secondMessage }}</label>
