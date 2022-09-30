@@ -14,7 +14,7 @@ export class EventBindingComponent implements OnInit {
   }
 
   onKey() {
-    this.secondMessage = "I Dont Care what you type, I produce this message";
+    this.secondMessage = "I dont care what you type, I only produce this message";
   }
   constructor() { }
 

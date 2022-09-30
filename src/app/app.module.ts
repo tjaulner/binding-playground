@@ -8,9 +8,10 @@ import { PropertyBindingComponent } from './nav/property-binding/property-bindin
 import { EventBindingComponent } from './nav/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './nav/two-way-binding/two-way-binding.component';
 import { NoNgmodelComponent } from './nav/two-way-binding/no-ngmodel/no-ngmodel.component';
-import { NgifComponent } from './nav/two-way-binding/ngif/ngif.component';
-import { NgforComponent } from './nav/two-way-binding/ngfor/ngfor.component';
-import { NgifelseComponent } from './nav/two-way-binding/ngifelse/ngifelse.component';
+import { NgifComponent } from './nav/directives/ngif/ngif.component';
+import { NgforComponent } from './nav/directives/ngfor/ngfor.component';
+import { NgifelseComponent } from './nav/directives/ngifelse/ngifelse.component';
+import { DirectivesComponent } from './nav/directives/directives.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NgifelseComponent } from './nav/two-way-binding/ngifelse/ngifelse.compo
     NoNgmodelComponent,
     NgifComponent,
     NgforComponent,
-    NgifelseComponent
+    NgifelseComponent,
+    DirectivesComponent
 
   ],
   imports: [

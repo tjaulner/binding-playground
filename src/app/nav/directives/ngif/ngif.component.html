@@ -1,0 +1,76 @@
+<h5>NG If Example 1</h5>
+<p>True or False - True will show a message, False will hide it</p>
+
+<button
+  type="toggle"
+  (click)="isShow = true"
+  class="btn-primary"
+  >True</button>
+
+<button
+  type="toggle"
+  (click)="isShow = false"
+  class="btn-primary"
+  >False</button>
+
+<p *ngIf="isShow"
+  >When isShow is true....Message Appears. Clicking false
+  will hide it.
+</p>
+
+<hr>
+<!-- ************************************************* -->
+
+<h5>NG If Example 2</h5>
+
+<p>More detailed example using multiple selections/options which
+  will have corresponding output text
+</p>
+
+<h6>Programming Note. Looking to create a sequence of if statements where
+  the p lines will appear based on the button selections.
+  1) Note - Superuser question will only show if "yes" is selected for user
+  2) Note - account status will only show if a user selects that they
+  are a user or super user.
+  ** For Next Time - Need to make the button selections toggle so that you
+    Can click one and then the other or so forth and the user status changes
+    dynamically
+</h6>
+
+<div class="flex-column">
+<label>User?</label>
+  <button
+    class="btn-success"
+    (click)="isUser = !isUser"
+    >Yes</button>
+
+  <button
+    class="btn-danger"
+    (click)="isUser"
+    >No</button>
+
+  <button
+    class="btn-primary"
+    (click)="isSuperUser = !isSuperUser"
+    >Super User</button>
+</div>
+
+<br>
+<br>
+
+<label>User Status:</label>
+<p *ngIf="isUser">"Just a User"</p>
+<p *ngIf="isSuperUser">"A Super User! Nerd Alert"</p>
+<p *ngIf="!isUser && !isSuperUser">"You're not a member"</p> <!--Create a ternary expression for this-->
+
+<br>
+
+<label>Account Status:</label> <!-- Need to code this account situation-->
+  <p *ngIf="isCurrent">"Your Membership is Current"</p>
+  <p *ngIf="!isCurrent">"Dude, pay your bill to remain a member"</p>
+  <p>"Your not a user or Super User, so how did you get this message?"</p>
+
+
+
+
+<hr>
